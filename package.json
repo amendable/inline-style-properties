@@ -1,5 +1,5 @@
 {
-  "name": "@amendable/inline-css-properties",
+  "name": "@amendable/inline-style-properties",
   "version": "0.1.0",
   "main": "dist/commonjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,11 +8,11 @@
     "dist/esm"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/amendable/inline-css-properties",
+  "homepage": "https://github.com/amendable/inline-style-properties",
   "bugs": {
-    "url": "https://github.com/amendable/inline-css-properties/issues"
+    "url": "https://github.com/amendable/inline-style-properties/issues"
   },
-  "repository": "amendable/inline-css-properties",
+  "repository": "amendable/inline-style-properties",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.5",

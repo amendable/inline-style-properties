@@ -1,2 +1,8 @@
-import cssProperties from './cssProperties.json'
-export default (key) => cssProperties.includes(key)
+import inlineProperties from './inlineProperties.json'
+const hasProperty = (key) => inlineProperties.includes(key);
+
+export {
+  hasProperty,
+}
+
+export default inlineProperties;

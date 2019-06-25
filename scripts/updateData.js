@@ -4,5 +4,5 @@ const camelCaseCss = require('camelcase-css');
 
 (async () => {
   const data = all.map(item => camelCaseCss(item)).sort();
-  await fs.writeFile(`${__dirname}/../src/cssProperties.json`, JSON.stringify(data));
+  await fs.writeFile(`${__dirname}/../src/inlineProperties.json`, JSON.stringify(data));
 })();

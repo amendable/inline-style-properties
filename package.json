@@ -1,0 +1,37 @@
+{
+  "name": "@amendable/inline-css-properties",
+  "version": "0.1.0",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/commonjs",
+    "dist/esm"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/amendable/inline-css-properties",
+  "bugs": {
+    "url": "https://github.com/amendable/inline-css-properties/issues"
+  },
+  "repository": "amendable/inline-css-properties",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.4.5",
+    "camelcase-css": "^2.0.1",
+    "jest": "^24.8.0",
+    "known-css-properties": "^0.14.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "yarn build-esm && yarn build-commonjs",
+    "watch": "BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js -w",
+    "build-commonjs": "NODE_ENV=production BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js  --copy-files",
+    "build-esm": "NODE_ENV=production BABEL_ENV=esm babel src --out-dir dist/esm --config-file ./babel.config.js  --copy-files",
+    "update-data": "node ./scripts/updateData"
+  }
+}

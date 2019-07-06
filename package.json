@@ -33,5 +33,8 @@
     "build-commonjs": "NODE_ENV=production BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js  --copy-files",
     "build-esm": "NODE_ENV=production BABEL_ENV=esm babel src --out-dir dist/esm --config-file ./babel.config.js  --copy-files",
     "update-data": "node ./scripts/updateData"
+  },
+  "dependencies": {
+    "mem": "^5.1.1"
   }
 }

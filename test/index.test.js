@@ -12,10 +12,6 @@ it('returns true for paddingLeft', () => {
   expect(hasProperty('paddingLeft')).toBe(true)
 })
 
-it('returns true for paddingLeft', () => {
-  expect(hasProperty('paddingLeft')).toBe(true)
-})
-
 it('returns true for MozAnimation', () => {
   expect(hasProperty('MozAnimation')).toBe(true)
 })

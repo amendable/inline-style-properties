@@ -1,6 +1,6 @@
 {
   "name": "@amendable/inline-style-properties",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -19,10 +19,11 @@
     "camelcase-css": "^2.0.1",
     "jest": "^24.9.0",
     "known-css-properties": "^0.17.0",
-    "microbundle": "^0.11.0"
+    "microbundle": "^0.11.0",
+    "rimraf": "^3.0.0"
   },
   "scripts": {
-    "build": "microbundle build --no-compress --name amendableInlineStyleProperties",
+    "build": "rimraf build && microbundle build --no-compress --name amendableInlineStyleProperties",
     "watch": "microbundle watch --no-compress",
     "test": "jest",
     "update-data": "node ./scripts/updateData"

@@ -23,7 +23,7 @@
     "rimraf": "^3.0.0"
   },
   "scripts": {
-    "build": "rimraf build && microbundle build --no-compress --name amendableInlineStyleProperties",
+    "build": "rimraf dist && microbundle build --no-compress --name amendableInlineStyleProperties",
     "watch": "microbundle watch --no-compress",
     "test": "jest",
     "update-data": "node ./scripts/updateData"

@@ -1,11 +1,10 @@
 {
   "name": "@amendable/inline-style-properties",
   "version": "0.3.0",
-  "main": "dist/commonjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
   "files": [
-    "dist/commonjs",
-    "dist/esm"
+    "dist"
   ],
   "license": "MIT",
   "homepage": "https://github.com/amendable/inline-style-properties",
@@ -14,27 +13,21 @@
   },
   "repository": "amendable/inline-style-properties",
   "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@babel/runtime": "^7.6.3",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.6",
     "camelcase-css": "^2.0.1",
     "jest": "^24.9.0",
-    "known-css-properties": "^0.16.0"
+    "known-css-properties": "^0.17.0",
+    "microbundle": "^0.11.0"
   },
   "scripts": {
+    "build": "microbundle build --no-compress --name amendableInlineStyleProperties",
+    "watch": "microbundle watch --no-compress",
     "test": "jest",
-    "build": "yarn build-esm && yarn build-commonjs",
-    "watch": "BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js -w",
-    "build-commonjs": "NODE_ENV=production BABEL_ENV=commonjs babel src --out-dir dist/commonjs --config-file ./babel.config.js  --copy-files",
-    "build-esm": "NODE_ENV=production BABEL_ENV=esm babel src --out-dir dist/esm --config-file ./babel.config.js  --copy-files",
     "update-data": "node ./scripts/updateData"
   },
   "dependencies": {
-    "mem": "^5.1.1"
+    "mem": "^6.0.1"
   }
 }

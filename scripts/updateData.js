@@ -1,7 +1,7 @@
 const fs = require('fs').promises;
 const { all } = require('known-css-properties');
 const camelCaseCss = require('camelcase-css');
-const excludedList = ['src'];
+const excludedList = ['src', 'alt'];
 
 (async () => {
   const data = all

@@ -10,4 +10,5 @@ const excludedList = ['src', 'alt'];
     .sort();
 
   await fs.writeFile(`${__dirname}/../src/inlineProperties.json`, JSON.stringify(data));
+  console.log('Finished updating data.');
 })();

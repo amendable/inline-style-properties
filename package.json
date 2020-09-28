@@ -14,15 +14,15 @@
   "repository": "amendable/inline-style-properties",
   "devDependencies": {
     "@amendable/prettier-config": "^1.0.0",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-react": "^7.8.3",
-    "@babel/runtime": "^7.8.3",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/runtime": "^7.11.2",
     "camelcase-css": "^2.0.1",
-    "jest": "^25.1.0",
-    "known-css-properties": "^0.18.0",
-    "microbundle": "^0.12.0-next.8",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.1"
+    "jest": "^26.4.2",
+    "known-css-properties": "^0.20.0",
+    "microbundle": "^0.12.4",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
     "build": "rimraf dist && microbundle build --no-compress --name amendableInlineStyleProperties",
@@ -31,7 +31,7 @@
     "update-data": "node ./scripts/updateData"
   },
   "dependencies": {
-    "mem": "^6.0.1"
+    "mem": "^6.1.1"
   },
   "prettier": "@amendable/prettier-config"
 }

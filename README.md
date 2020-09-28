@@ -12,6 +12,12 @@ hasProperty('display') // true
 hasProperty('test') // false
 ```
 
+You can exclude vendor properties by passing `includeVendor` option;
+
+```js
+hasProperty('MozAnimation', { includeVendor: false }) // false
+```
+
 Get all properties list
 
 ```js
